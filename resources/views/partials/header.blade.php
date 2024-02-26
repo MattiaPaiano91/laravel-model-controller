@@ -19,21 +19,17 @@
 @endphp
 
 <header>
-    <nav>
+    <nav class="d-flex justify-content-center ">
         <ul>
             @foreach ($links as $link)
                 <li>
-                    @if ($link['active'])
-                        <a href="{{ $link['url'] }}">
-                            {{ $link['label'] }}
-                        </a>
-                    @else
-                        <del>
-                            {{ $link['label'] }}
-                        </del>
-                    @endif
+                    <a href="{{ $link['url'] }}">
+                        {{ $link['label'] }}
+                    </a>
                 </li>
             @endforeach
         </ul>
     </nav>
-</header>
+    </header>
+                        
+                

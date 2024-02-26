@@ -19,18 +19,7 @@
         @include('partials.header')
 
         <main>
-            <div class="container">
-
-                <div class="row">
-
-                    <div class="col">
-                        @yield('main-content')
-
-                    </div>
-
-                </div>
-
-            </div>
+            @yield('main-content')
         </main>
 
         @include('partials.footer')
