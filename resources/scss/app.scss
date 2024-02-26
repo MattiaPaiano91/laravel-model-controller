@@ -1,15 +1,19 @@
 @import "~bootstrap/scss/bootstrap";
-
-main {
-    background-color: lightcoral;
+.col{
+    ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    li{
+        margin-right: 10px;
+        list-style: none;
+        .card-container{
+            width: 300px;
+            height: 500px;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+    }
 }
 
-.gatto-img {
-    height: 200px;
-}
 
-.gatto-bg {
-    height: 200px;
-    background-image: url('../img/gatto.webp');
-    background-size: contain;
-}
